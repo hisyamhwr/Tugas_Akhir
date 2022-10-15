@@ -1,0 +1,248 @@
+import { Link } from 'react-router-dom'
+import { guide, i1, i2, i3, i4, i5, i6, Jelantah, Kemasan, Kertas, Plastik, Botol, Kaleng } from '../assets/img';
+import {Faq, Flow} from '../components';
+import '../assets/css/PengelolaSampah.css'
+import { useState } from 'react';
+
+const PengelolaSampah = () => {
+    const [flow, setFlow] = useState('ways1')
+    const close = () => {
+        document.querySelector('.popup').classList.remove('popupon')
+        document.querySelector('.popup1').classList.remove('popupon')
+        document.querySelector('.popup2').classList.remove('popupon')
+        document.querySelector('.popup3').classList.remove('popupon')
+        document.querySelector('.popup4').classList.remove('popupon')
+        document.querySelector('.popup5').classList.remove('popupon')
+    }
+    const onPoin1 = () => {
+        let picon = document.querySelectorAll('.knict')
+        for(let i=0;i < picon.length; i++){
+          picon[i].classList.remove('knict-on')  
+        }
+        picon[0].classList.add('knict-on')
+        setFlow('ways1')
+      
+      }
+      const onPoin2 = () => {
+        let picon = document.querySelectorAll('.knict')
+        for(let i=0;i < picon.length; i++){
+          picon[i].classList.remove('knict-on')                              
+        }
+        picon[1].classList.add('knict-on')
+        setFlow('ways2')
+      
+      }
+      const onPoin3 = () => {
+        let picon = document.querySelectorAll('.knict')
+        for(let i=0;i < picon.length; i++){
+          picon[i].classList.remove('knict-on')
+        }
+        picon[2].classList.add('knict-on')
+        setFlow('ways3')
+      
+      }
+      const onPoin4 = () => {
+        let picon = document.querySelectorAll('.knict')
+        for(let i=0;i < picon.length; i++){
+          picon[i].classList.remove('knict-on')
+        }
+        picon[3].classList.add('knict-on')
+        setFlow('ways4')
+      
+      }
+    return (
+        <div>
+            <div className="jumbotron">
+                <h1>Kami membantu anda untuk mengolah sampah</h1>
+                <br />
+                <p className='banner'>Percayakan daur ulang sampahmu kepada Waste4Change</p>
+                <br />
+                <Link to="/kirim">
+                <button className="btn-jumb">Kirim Sampah</button>
+                </Link>
+            </div>
+            <br /><br /><br /><br />
+            <center>
+                <h3 className='title-text-lp'>Cara Mengirim Sampah</h3>
+                <span className='linegreen'></span><br/>
+                <p className='small'>Ikuti tata cara pengiriman sampah berikut, jangan sampai terlewat ya</p>
+            </center>
+            <br /><br />
+            <div className="container container-cuts">
+                <div className="cucsy">
+                    <span className='apnn'><span className='aabajs'>1</span>Pilah Sampah Mandiri</span>
+                    <p className='assagt'>Pilah sampah anda secara mandiri
+                    pengiriman sampah individual hanya menerima sampah anorganik </p>
+                </div>
+                <div className="cucsy">
+                    <span className='apnn'><span className='aabajs'>2</span>Pengisian form website</span>
+                    <p className='assagt'>Masukkan data pengiriman menggunakan website dan salin kode transaksi sampah</p>
+                </div>
+                <div className="cucsy">
+                    <span className='apnn'><span className='aabajs'>3</span>Kemas Sampah anda</span>
+                    <p className='assagt'>Kemas sampah anda di dalam kotak/kardus. Sematkan kode transaksi dari website </p>
+                </div>
+                <div className="cucsy">
+                    <span className='apnn'><span className='aabajs'>4</span>Kirim sampah anda</span>
+                    <p className='assagt'>Kirimkan sampah telah anda kemas menggunakan jasa ekspedisi kepada mitra pengolahan sampah kami </p>
+                </div>
+            </div>
+            
+            <br /><br /><br /><br /><br />
+            <center>
+                <h3 className='title-text-lp'>Jenis sampah yang didaur ulang</h3>
+                <span className='linegreen'></span><br/>
+                <p className='small'>Berikut sampah yang dapat anda kirimkan untuk kami daur ulang</p>
+            </center>
+            <br /><br /><br />
+            <div className="container container-cuts">
+                <div className="gtapbt">
+                    <img src={i1} width="80px" /><br />
+                    <span className="apnn">Kertas</span>
+                    <span className="assagt" align="center">
+                    Kertas HVS, Kertas Karton, Koran, Majalah, Kardus, <br/>
+                    Karton Makanan/Minuman, dan lain-lain
+                    </span>
+                    <span className="dammg" onClick={() => document.querySelector('.popup2').classList.add('popupon')}>
+                    Lihat Detail Sampah
+                    </span>
+                </div>
+                <div className="gtapbt">
+                    <img src={i2} width="80px" /><br />
+                    <span className="apnn">Kaca</span>
+                    <span className="assagt" align="center">
+                    Botol Kaca, Cermin, Vas Kaca, Piring, Gelas, <br /> 
+                    dan Barang berbahan kaca lainnya.
+                    </span>
+                    <span className="dammg" onClick={() => document.querySelector('.popup1').classList.add('popupon')}>
+                    Lihat Detail Sampah
+                    </span>
+                </div>
+                <div className="gtapbt">
+                    <img src={i3} width="80px" /><br />
+                    <span className="apnn">Minyak Jelantah</span>
+                    <span className="assagt" align="center">
+                    Kami menerima limbah minyak goreng bekas pakai <br />
+                    untuk didaur ulang menjadi energi baru terbarukan
+                    </span>
+                    <span className="dammg" onClick={() => document.querySelector('.popup').classList.add('popupon')}>
+                    Lihat Detail Sampah
+                    </span>
+                </div>
+            </div><br /><br/><br /><br />
+            <div className="container container-cuts">
+                <div className="gtapbt">
+                    <img src={i5} width="80px" /><br />
+                    <span className="apnn">Plastik</span>
+                    <span className="assagt" align="center">
+                    Botol Minum, Botol Shampo, Toples Makanan, <br />
+                    dan Barang berbahan plastik lainnya dengan kode 1 - 7
+                    </span>
+                    <span className="dammg" onClick={() => document.querySelector('.popup5').classList.add('popupon')}>
+                    Lihat Detail Sampah
+                    </span>
+                </div>
+                <div className="gtapbt">
+                    <img src={i4} width="80px" /><br />
+                    <span className="apnn">Kaleng atau Besi</span>
+                    <span className="assagt" align="center">
+                    Kaleng Minuman Makanan, Peralatan Makan, <br />
+                    Masak Besi, Seng, dan Barang berbahan metal lainnya.
+                    </span>
+                    <span className="dammg" onClick={() => document.querySelector('.popup4').classList.add('popupon')}>
+                    Lihat Detail Sampah
+                    </span>
+                </div>
+                <div className="gtapbt">
+                    <img src={i6} width="80px" /><br />
+                    <span className="apnn">Kemasan Plastik</span>
+                    <span className="assagt" align="center">
+                    Kemasan makanan ringan, sabun dan shampo sachet, <br /> 
+                    mie instan, serta kopi instan  dan alumunium foil.
+                    </span>
+                    <span className="dammg" onClick={() => document.querySelector('.popup3').classList.add('popupon')}>
+                    Lihat Detail Sampah
+                    </span>
+                </div>
+            </div>
+            
+            <br /><br /><br /><br /><br /><br /><br />
+            <center>
+                <h3 className='title-text-lp'>Begini cara sampah sebelum dikirim</h3>
+                <span className='linegreen'></span><br/>
+                <p className='small'>Sebelum mengirimkan sampah, Simak bagaimana mengolahnya agar mudah untuk dikemas dan didaur ulang</p>
+            </center>
+            <br />
+            <div className="container-cuts-b">    
+                <div onClick={onPoin1} className="knict knict-on">
+                Pemilahan Sampah
+                </div>
+                <div onClick={onPoin2} className="knict">
+                Pencucian sampah
+                </div>
+                <div onClick={onPoin3} className="knict">
+                Pengolahan botol plastik
+                </div>
+                <div onClick={onPoin4} className="knict">
+                Pengolahan sampah kertas
+                </div>
+            </div>
+            <br /><br /><br /><br />
+            <Flow ways={flow} />
+            <br /><br /><br />
+            <Faq />
+
+            <div className="popup">
+            <div className="detailsmph">
+            <span className='close-exit' onClick={close}>x</span>
+                <h3>Detail Minyak Jelantah</h3>
+                <br />
+                <img width={'100%'} src={Jelantah} />
+            </div>
+            </div>
+            <div className="popup1">
+            <div className="detailsmph">
+            <span className='close-exit' onClick={close}>x</span>
+                <h3>Detail Sampah Kaca</h3>
+                <br />
+                <img width={'100%'} src={Botol} />
+            </div>
+            </div>
+            <div className="popup2">
+            <div className="detailsmph">
+            <span className='close-exit' onClick={close}>x</span>
+                <h3>Detail Sampah Kertas</h3>
+                <br />
+                <img width={'100%'} src={Kertas} />
+            </div>
+            </div>
+            <div className="popup3">
+            <div className="detailsmph">
+            <span className='close-exit' onClick={close}>x</span>
+                <h3>Detail Sampah Kemasan Plastik</h3>
+                <br />
+                <img width={'100%'} src={Kemasan} />
+            </div>
+            </div>
+            <div className="popup4">
+            <div className="detailsmph">
+            <span className='close-exit' onClick={close}>x</span>
+                <h3>Detail Besi dan Kaleng</h3>
+                <br />
+                <img width={'100%'} src={Kaleng} />
+            </div>
+            </div>
+            <div className="popup5">
+            <div className="detailsmph">
+            <span className='close-exit' onClick={close}>x</span>
+                <h3>Detail Plastik</h3>
+                <br />
+                <img width={'100%'} src={Plastik} />
+            </div>
+            </div>
+
+        </div>
+    )
+}
+
+export default PengelolaSampah;

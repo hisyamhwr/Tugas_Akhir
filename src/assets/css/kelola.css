@@ -1,0 +1,80 @@
+.cuka {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cdck {
+    padding: 10px 160px;
+}
+
+.empty {
+    width: 100%;
+    height: 270px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0px 2px 36px rgba(185, 185, 185, 0.24);
+}
+
+.empty2 {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 36px rgba(185, 185, 185, 0.24);
+}
+
+.mainpop {
+    width: 50%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    position: relative;
+}
+
+.dipleksem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dipleksem table {
+    width: 49%;
+}
+
+.ftbgtl {
+    height: 207px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.ftbgtl ::placeholder{
+    transform: translateY(-85px);
+}
+
+.lclist {
+    width: 90%;
+    height: 90px;
+    border: 2px solid rgba(209, 210, 212, 1);
+    border-radius: 8px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mbgtah {
+    margin-bottom: 5px;
+}
+
+.mlgtah {
+    margin-left: 8px;
+}
+
+.mlgtahi {
+    margin-left: 23px;
+}

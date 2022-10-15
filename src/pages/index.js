@@ -1,0 +1,16 @@
+import Setting from './Setting'
+import ExchangePoin from './ExchangePoin'
+import Main from './Main'
+import Detail from './Detail'
+import Kirim from './Kirim'
+import PengelolaSampah from './PengelolaSampah'
+import Home from './Home'
+import Login from './Login'
+import Regis from './Regis'
+import Blog from './Blog'
+import DetailBlog from './DetailBlog'
+import HubKami from './HubKami'
+import Kelola from './Kelola'
+import KelolaIsi from './KelolaIsi'
+
+export { Login, Setting, ExchangePoin, Main, Detail, Kirim, PengelolaSampah, Home, Regis, Blog, DetailBlog, HubKami, Kelola, KelolaIsi }

@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #F9FEFE;
+}
+
+:root {
+  --main : rgba(0, 161, 190, 1);
+  --second : #282A35;
+}
+
+.container {
+  padding: 0 220px;
+}
+
+.danger {
+  color: rgba(253, 36, 85, 1);
+}
+
+.on-menu {
+  color: var(--main);
+  font-weight: bold;
+}
+
+.cab-hov:hover {
+  cursor: pointer;
+}
+
+.list-menu:hover, button:hover {
+  cursor: pointer;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup,.popup1 ,.popup2 ,.popup3 ,.popup4 ,.popup5  {
+  position: fixed;
+  top: 0;left: 0;right: 0;bottom: 0;
+  background-color: rgba(0, 0, 0, 0.30);
+  z-index: 999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popuplog {
+  position: fixed;
+  top: 0;left: 0;right: 0;bottom: 0;
+  background-color: rgba(0, 0, 0, 0.30);
+  z-index: 999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.dammg:hover {
+  cursor: pointer;
+}
+
+.popupon {
+  display: flex;
+}
+
+.knict:hover {
+  cursor: pointer;
+}
+
+.close-exit {
+  display: block;
+  position: absolute;
+  transform: scaleX(1.3);
+  top: 20px;
+  right: 30px;
+}
+
+.close-exit:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.btn-pop {
+  height: 52px;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  font-size: 16px;
+  width: 100% !important;
+  background-color: gray !important;
+}
+
+.onpopbtn {
+  background-color: var(--main) !important;
+}

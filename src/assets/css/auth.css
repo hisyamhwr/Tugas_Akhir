@@ -1,0 +1,123 @@
+.bckta {
+    position: absolute;
+    top: 60px;
+    right: 56px;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--main);
+}
+
+.auth {
+    display: flex;
+    position: fixed;
+    top: 0;left: 0;
+    bottom: 0;right: 0;
+    z-index: 999;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.banner-auth {
+    width: 60%;
+    height: 100%;
+    background-size: cover;
+    background-image: url(../img/sampah.jpg);
+    position: relative;
+}
+
+.l-auth {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    width: 150px;
+}
+
+.sub-t-auth {
+    font-size: 18px;
+    line-height: 165%;
+    position: absolute;
+    bottom: 80px;
+    left: 80px;
+    display: block;
+    color: white;
+}
+
+.form-auth {
+    width: 40%;
+    padding: 40px;
+}
+
+.pnp-auth {
+    font-size: 16px;
+    line-height: 165%;
+    font-size: 18px;
+}
+.bnb-auth {
+    font-weight: bold;
+    line-height: 165%;
+    font-size: 28px;
+}
+
+.Checkbox .check .Remember {
+    display: flex !important;
+    align-items: center;
+    width: 13px;
+}
+
+.forgot-pass {
+    font-size: 13px;
+    color: #00A1BE;
+}
+
+.form-t-auth {
+    width: 100%;
+    line-height: 100%;
+}
+
+.btn-plus {
+    width: 100% !important;
+}
+
+.kucbda-row {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.kucbda {
+    width: 22px !important;
+    height: 16px;
+}
+
+.kucbda2 {
+    width: 200px !important;
+    height: 16px;
+    font-weight: 600;
+}
+
+.kucbda3 {
+    width: 460px !important;
+    height: 16px;
+    text-align: right;
+    font-weight: 600;
+    color: var(--main);
+}
+
+.snk {
+    text-align: center;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+}
+
+.dftr {
+    text-align: center;
+    height: 64px;
+    line-height: 64px;
+    font-size: 14px;
+}
+
+.dftr2 {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--main);
+}
